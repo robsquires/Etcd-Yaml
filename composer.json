@@ -11,5 +11,8 @@
         "linkorb/etcd-php"  : "dev-master",
         "symfony/yaml"      : "2.7.*@dev",
         "symfony/config"    : "2.7.*@dev"
-    }
+    },
+    "bin" : [
+        "etc-yaml.php"
+    ]
 }
