@@ -1,10 +1,18 @@
+#!/usr/bin/env php
 <?php
 
 use Symfony\Component\Yaml\Yaml;
 use LinkORB\Component\Etcd\Client;
 use LinkORB\Component\Etcd\Exception\KeyNotFoundException;
 
-require_once realpath(dirname(__FILE__) . '/vendor/autoload.php');
+$loader = __DIR__ . '/../vendor/autoload.php';
+
+if (!file_exists($loader)) {
+    $loader = __DIR__ . '/../../../autoload.php';
+}
+
+require $loader;
+
 
 if (!isset($argv[1])) {
     throw new Exception('Specify config file');

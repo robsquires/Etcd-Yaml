@@ -13,6 +13,6 @@
         "symfony/config"    : "2.7.*@dev"
     },
     "bin" : [
-        "etc-yaml.php"
+        "bin/etcd-yaml"
     ]
 }
