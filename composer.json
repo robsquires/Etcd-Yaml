@@ -1,0 +1,15 @@
+{
+    "name": "squirrel/etcd-yaml",
+    "description": "Syncs etcd entries to YAML",
+    "authors": [
+        {
+            "name": "Rob Squires",
+            "email": "rob.squires@gmail.com"
+        }
+    ],
+    "require": {
+        "linkorb/etcd-php"  : "dev-master",
+        "symfony/yaml"      : "2.7.*@dev",
+        "symfony/config"    : "2.7.*@dev"
+    }
+}
